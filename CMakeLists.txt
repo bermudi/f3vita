@@ -55,7 +55,7 @@ target_link_libraries(${PROJECT_NAME}
 vita_create_self(${PROJECT_NAME}.self ${PROJECT_NAME})
 
 # Enable Unsafe Homebrew (Required for filesystem access)
-set(VITA_MKSFOEX_FLAGS "${VITA_MKSFOEX_FLAGS} -s")
+set(VITA_MAKE_FSELF_FLAGS "${VITA_MAKE_FSELF_FLAGS} -s")
 
 # Create VPK (installable package)
 vita_create_vpk(${PROJECT_NAME}.vpk ${VITA_TITLEID} ${PROJECT_NAME}.self
