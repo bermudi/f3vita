@@ -138,7 +138,7 @@ void psvDebugScreenInit(void)
     opt.alignment = 256 * 1024;
 
     SceUID fb_uid = sceKernelAllocMemBlock("display",
-                                           SCE_KERNEL_MEMBLOCK_TYPE_USER_RW,
+                                           SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_RW,
                                            4 * DISPLAY_STRIDE * DISPLAY_HEIGHT,
                                            &opt);
 
